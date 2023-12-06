@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2023-12-05T00:00:00Z
-draft: true
+draft: false
 avatar : "/images/avatar.webp"
 authors : ["Rishi Paul"]
 imageBig : "/images/deBlog-logos.jpeg"

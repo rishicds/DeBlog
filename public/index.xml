@@ -34,5 +34,13 @@ Great SEO SEO improvement Use SVG and Webp instead of JPGs, PNGS etc. Use proper
       <description>SOCIAL MEDIA: THE SURFACE DARK WEB
 In recent years, the social media has become the common hunting grounds for all hackers/criminals which can affect to a national level or just to seek revenge to an individual. Pentagon officials are increasingly worried that state-backed hackers/criminals are using social media platforms such as Twitter and Facebook to break into computer networks of high ranked or individuals. Therefore exercising such power comes at a high stake.</description>
     </item>
+    <item>
+      <title>About</title>
+      <link>https://debloga.vercel.app/about/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://debloga.vercel.app/about/</guid>
+      <description>About Me Hello there! 👋 I&amp;rsquo;m Rishi, a passionate frontend developer with a keen eye for creating visually appealing and user-friendly interfaces. My journey in the realm of web development has been an exciting adventure, marked by the continuous pursuit of excellence in crafting seamless digital experiences.
+While my expertise lies in frontend technologies, I am fueled by a curiosity that extends beyond the boundaries of the browser. Eager to delve into the realms of Artificial Intelligence, Machine Learning, and Data Science, I am on a mission to expand my skill set and embrace the future of technology.</description>
+    </item>
   </channel>
 </rss>
