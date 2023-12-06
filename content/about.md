@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2023-12-05T00:00:00Z
-draft: false
+draft: true
 avatar : "/images/avatar.webp"
 authors : ["Rishi Paul"]
 imageBig : "/images/deBlog-logos.jpeg"
@@ -19,6 +19,7 @@ Let's build a future where creativity and intelligence converge seamlessly! 🚀
 ## Connect with Me
 
 - Email: rishi.404@outlook.com
+- [My Portfolio](https://portfolio-3d-pearl.vercel.app/)
 - [Linkedin](https://www.linkedin.com/in/rishi-paul04/) <--
 - [Github](https://github.com/rishicds) <--
 - [Instagram](https://www.instagram.com/goodbai_17/) <--
