@@ -20,7 +20,7 @@ Built with HUGO, The world’s fastest framework for building websites.
 - > **Extremely fast**
 - > **Uses minimal bandwith**
 - > **Great SEO**
-![SEO ranking](https://imgur.com/uCtWdJo "SEO score")
+![SEO ranking](/images/deblog%20stats.webp)
 
 ## SEO improvement
 
@@ -28,6 +28,43 @@ Built with HUGO, The world’s fastest framework for building websites.
 - Use proper metadata
 - Use Linkable assets
 -  Target Brand New Keywords
+
+## How can I contribute?
+
+If you wish to add your own article or make changes in order to improve this site, head to the "[deBlog repository](https://github.com/rishicds/DeBlog)".
+
+Then follow the steps below:
+
+1.Star and Fork the Repository
+![step1](/images/howto/step1.png)
+2.Clone the repository in any IDE of your choice
+
+![step2](/images/howto/step2.png)
+
+3.Create your article by typing the following command in the Git Bash terminal, if you don't have Git Bash you can install it from "[here](https://git-scm.com/downloads)"
+![step3](/images/howto/step3.png)
+Your article will show up in the contents folder, any images you add should be in the `static/images/` folder and it should be linked in your MD file accordingly.
+
+4.Start writing your article, You can change the title and details by changing the metadata of the file.
+![step5](/images/howto/step5.png)
+
+5.You can view your changes in real-time by typing the following command.
+![step4](/images/howto/step4.png)
+
+6.When you're satisfied with your article, type `hugo` , you should see a public folder be created(delete the public folder beforehand). And you're done.
+
+7.After you're finished you can commit the files and raise a pull request. To learn how to do that you can go "[here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)"
+
+8.If you face any issues, feel free to start a discussion on the repository.
+
+## What should the article be about?
+The article can be about any topic but please refrain from doing the following:
+
+1.Using vulgar/insensitive language.
+
+2.Promoting gambling/obscene things.
+
+3.Boring topics which have already been written plenty of times.
 
 ## Why HUGO?
 Hugo is a [static site generator](https://en.wikipedia.org/wiki/Static_site_generator) written in [Go](https://go.dev/), optimized for speed and designed for flexibility. With its advanced templating system and fast asset pipelines, Hugo renders a complete site in seconds, often less.

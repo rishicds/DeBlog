@@ -28,7 +28,7 @@ Dark Web OSINT:
 
 The [Dark Web](https://en.wikipedia.org/wiki/Dark_web) can be accessed using TOR( The Onion Router) which provides a high degree of anonymization for traffic across the network. *Information can be gathered from complex supply chains across dark web markets, forums and illicit communities.*
 
-![](Aspose.Words.e31dcd25-c535-4584-89d6-2a080143879d.001.png)
+![](/images/Aspose.Words.e31dcd25-c535-4584-89d6-2a080143879d.001.png)
 
 
 External attack surface vectors and OSINT:
@@ -51,7 +51,7 @@ Google Dorking on Targets:
 
 For example:-   intitle:admbook intitle:Fversion filetype:php would locate PHP web pages with the strings “admbook” and “Fversion” in their titles.
 
-![](Aspose.Words.e31dcd25-c535-4584-89d6-2a080143879d.002.png)
+![](/images/Aspose.Words.e31dcd25-c535-4584-89d6-2a080143879d.002.png)
 
 Alt- Locating my twitter handle.
 
@@ -61,7 +61,7 @@ Data Dumps:
 
 A data dump is usually a large amount of data or files transferred between two systems over a connected network. Therefore it is relatively easier to find people and their email, passwords and sometimes address and credit/debit card information. 
 
-![](Aspose.Words.e31dcd25-c535-4584-89d6-2a080143879d.003.png)
+![](/images/Aspose.Words.e31dcd25-c535-4584-89d6-2a080143879d.003.png)
 
 Tool:
 
