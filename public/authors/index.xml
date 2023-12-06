@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on deBlog</title>
+    <link>https://debloga.vercel.app/authors/</link>
+    <description>Recent content in Authors on deBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Dec 2023 15:20:24 +0530</lastBuildDate>
+    <atom:link href="https://debloga.vercel.app/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kanouj Bose</title>
+      <link>https://debloga.vercel.app/authors/kanouj-bose/</link>
+      <pubDate>Wed, 06 Dec 2023 15:20:24 +0530</pubDate>
+      <guid>https://debloga.vercel.app/authors/kanouj-bose/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nirjhar Barma</title>
+      <link>https://debloga.vercel.app/authors/nirjhar-barma/</link>
+      <pubDate>Wed, 06 Dec 2023 15:20:24 +0530</pubDate>
+      <guid>https://debloga.vercel.app/authors/nirjhar-barma/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pritam Das</title>
+      <link>https://debloga.vercel.app/authors/pritam-das/</link>
+      <pubDate>Wed, 06 Dec 2023 15:20:24 +0530</pubDate>
+      <guid>https://debloga.vercel.app/authors/pritam-das/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rishi Paul</title>
+      <link>https://debloga.vercel.app/authors/rishi-paul/</link>
+      <pubDate>Tue, 05 Dec 2023 16:55:24 +0100</pubDate>
+      <guid>https://debloga.vercel.app/authors/rishi-paul/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -51,11 +51,9 @@ Your article will show up in the contents folder, any images you add should be i
 5.You can view your changes in real-time by typing the following command.
 ![step4](/images/howto/step4.png)
 
-6.When you're satisfied with your article, type `hugo` , you should see a public folder be created(delete the public folder beforehand). And you're done.
+6.After you're finished you can commit the files and raise a pull request. To learn how to do that you can go "[here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)"
 
-7.After you're finished you can commit the files and raise a pull request. To learn how to do that you can go "[here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)"
-
-8.If you face any issues, feel free to start a discussion on the repository.
+7.If you face any issues, feel free to start a discussion on the repository.
 
 ## What should the article be about?
 The article can be about any topic but please refrain from doing the following:
