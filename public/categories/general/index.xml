@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>general on deBlog</title>
+    <link>https://debloga.vercel.app/categories/general/</link>
+    <description>Recent content in general on deBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 Dec 2023 15:20:24 +0530</lastBuildDate>
+    <atom:link href="https://debloga.vercel.app/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RFID-Radio Frequency Identification</title>
+      <link>https://debloga.vercel.app/rfid/</link>
+      <pubDate>Wed, 06 Dec 2023 15:20:24 +0530</pubDate>
+      <guid>https://debloga.vercel.app/rfid/</guid>
+      <description>RFID (RADIO FREQUENCY INDENTIFICATION)
+Radio Frequency Identification (RFID) refers to a wireless system comprised of two components: tags and readers. The reader is a device that has one or more antennas that emit radio waves and receive signals back from the RFID tag. Tags, which use radio waves to communicate their identity and other information to nearby readers, can be passive or active. Passive RFID tags are powered by the reader and do not have a battery.</description>
+    </item>
+    <item>
+      <title>Meet deBlog</title>
+      <link>https://debloga.vercel.app/my-first-post/</link>
+      <pubDate>Tue, 05 Dec 2023 16:55:24 +0100</pubDate>
+      <guid>https://debloga.vercel.app/my-first-post/</guid>
+      <description>Welcome to deBlog! Built with HUGO, The world’s fastest framework for building websites.
+Features of deBlog Extremely fast
+Uses minimal bandwith
+Great SEO SEO improvement Use SVG and Webp instead of JPGs, PNGS etc. Use proper metadata Use Linkable assets Target Brand New Keywords How can I contribute? If you wish to add your own article or make changes in order to improve this site, head to the &amp;ldquo;deBlog repository&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>SOCIAL MEDIA: THE SURFACE DARK WEB</title>
+      <link>https://debloga.vercel.app/nirjhar/</link>
+      <pubDate>Tue, 05 Dec 2023 12:23:59 +0530</pubDate>
+      <guid>https://debloga.vercel.app/nirjhar/</guid>
+      <description>SOCIAL MEDIA: THE SURFACE DARK WEB
+In recent years, the social media has become the common hunting grounds for all hackers/criminals which can affect to a national level or just to seek revenge to an individual. Pentagon officials are increasingly worried that state-backed hackers/criminals are using social media platforms such as Twitter and Facebook to break into computer networks of high ranked or individuals. Therefore exercising such power comes at a high stake.</description>
+    </item>
+  </channel>
+</rss>
