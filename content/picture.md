@@ -5,7 +5,7 @@ draft = false
 description="Masking Executables as Image Files"
 image="/images/reality.png"
 imageBig="/images/reality.png"
-categories=["general","dark-web","knowledge","osint"]
+categories=["general","digtital-forensics","malware-evasion"]
 authors=["Nirjhar Barma"]
 avatar="/images/nir.png"
 +++

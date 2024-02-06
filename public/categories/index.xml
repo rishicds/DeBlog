@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 05 Feb 2024 12:23:59 +0530</lastBuildDate>
     <atom:link href="https://debloga.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>dark-web</title>
-      <link>https://debloga.vercel.app/categories/dark-web/</link>
+      <title>digtital-forensics</title>
+      <link>https://debloga.vercel.app/categories/digtital-forensics/</link>
       <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/dark-web/</guid>
+      <guid>https://debloga.vercel.app/categories/digtital-forensics/</guid>
       <description></description>
     </item>
     <item>
@@ -23,17 +23,10 @@
       <description></description>
     </item>
     <item>
-      <title>knowledge</title>
-      <link>https://debloga.vercel.app/categories/knowledge/</link>
+      <title>malware-evasion</title>
+      <link>https://debloga.vercel.app/categories/malware-evasion/</link>
       <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/knowledge/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>osint</title>
-      <link>https://debloga.vercel.app/categories/osint/</link>
-      <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/osint/</guid>
+      <guid>https://debloga.vercel.app/categories/malware-evasion/</guid>
       <description></description>
     </item>
     <item>
@@ -44,10 +37,24 @@
       <description></description>
     </item>
     <item>
+      <title>osint</title>
+      <link>https://debloga.vercel.app/categories/osint/</link>
+      <pubDate>Wed, 06 Dec 2023 15:20:24 +0530</pubDate>
+      <guid>https://debloga.vercel.app/categories/osint/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>tech</title>
       <link>https://debloga.vercel.app/categories/tech/</link>
       <pubDate>Tue, 05 Dec 2023 16:55:24 +0100</pubDate>
       <guid>https://debloga.vercel.app/categories/tech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>dark-web</title>
+      <link>https://debloga.vercel.app/categories/dark-web/</link>
+      <pubDate>Tue, 05 Dec 2023 12:23:59 +0530</pubDate>
+      <guid>https://debloga.vercel.app/categories/dark-web/</guid>
       <description></description>
     </item>
   </channel>

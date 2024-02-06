@@ -6,16 +6,8 @@
     <description>Recent content in dark-web on deBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Feb 2024 12:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 05 Dec 2023 12:23:59 +0530</lastBuildDate>
     <atom:link href="https://debloga.vercel.app/categories/dark-web/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Pixel Perfect Ploy</title>
-      <link>https://debloga.vercel.app/picture/</link>
-      <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/picture/</guid>
-      <description>Hiding exe with Image extension What we always see is not what it is- A file could look innocent but it could hide the most dangerous malware. Windows hides file extensions by default, therefore there is an infinite possible ways to send a malware unnoticed, two way of doing it is hiding/attaching it with an image-
-This blog is only for educational purpose and in no way intended for malicious purpose.</description>
-    </item>
     <item>
       <title>SOCIAL MEDIA: THE SURFACE DARK WEB</title>
       <link>https://debloga.vercel.app/nirjhar/</link>
