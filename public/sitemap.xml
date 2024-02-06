@@ -17,9 +17,6 @@
     <loc>https://debloga.vercel.app/categories/general/</loc>
     <lastmod>2024-02-05T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>https://debloga.vercel.app/picture/</loc>
-    <lastmod>2024-02-05T12:23:59+05:30</lastmod>
-  </url><url>
     <loc>https://debloga.vercel.app/categories/knowledge/</loc>
     <lastmod>2024-02-05T12:23:59+05:30</lastmod>
   </url><url>
@@ -27,6 +24,9 @@
     <lastmod>2024-02-05T12:23:59+05:30</lastmod>
   </url><url>
     <loc>https://debloga.vercel.app/categories/osint/</loc>
+    <lastmod>2024-02-05T12:23:59+05:30</lastmod>
+  </url><url>
+    <loc>https://debloga.vercel.app/picture/</loc>
     <lastmod>2024-02-05T12:23:59+05:30</lastmod>
   </url><url>
     <loc>https://debloga.vercel.app/categories/hacking/</loc>
