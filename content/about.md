@@ -19,7 +19,7 @@ Let's build a future where creativity and intelligence converge seamlessly! 🚀
 ## Connect with Me
 
 - Email: rishi.404@outlook.com
-- My Portfolio- https://portfolio-3d-pearl.vercel.app/
+- My Portfolio- https://rishi04.vercel.app/
 - Linkedin- https://www.linkedin.com/in/rishi-paul04/
 - Github- https://github.com/rishicds
 - Instagram- https://www.instagram.com/goodbai_17/
