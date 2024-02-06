@@ -1,8 +1,8 @@
 +++
-title = 'Hiding exe with Image extension'
+title = 'Pixel Perfect Ploy'
 date = 2024-02-05T12:23:59+05:30
 draft = false
-description="What we always see is not what it is!"
+description="Masking Executables as Image Files"
 image="/images/reality.png"
 imageBig="/images/reality.png"
 categories=["general","dark-web","knowledge","osint"]
