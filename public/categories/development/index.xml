@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on deBlog</title>
+    <link>https://debloga.vercel.app/categories/development/</link>
+    <description>Recent content in development on deBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Feb 2024 12:23:59 +0530</lastBuildDate>
+    <atom:link href="https://debloga.vercel.app/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C Demystified: Mastering Programming</title>
+      <link>https://debloga.vercel.app/learnc/</link>
+      <pubDate>Sun, 11 Feb 2024 12:23:59 +0530</pubDate>
+      <guid>https://debloga.vercel.app/learnc/</guid>
+      <description>Discover one of the earliest programming languages and what it has to offer What is C?
+Why do I need to learn about the 3rd letter of the alphabet!? Is something that you’re probably thinking about right now.
+C is a low-level language.
+It didn’t use to be. Back in the day when people carved punch cards out of granite, C was an incredible way to be free of the drudgery of lower-level languages like assembly19.</description>
+    </item>
+  </channel>
+</rss>

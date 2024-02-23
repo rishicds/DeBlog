@@ -6,20 +6,34 @@
     <description>Recent content in Categories on deBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Feb 2024 12:23:59 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 11 Feb 2024 12:23:59 +0530</lastBuildDate>
     <atom:link href="https://debloga.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>digtital-forensics</title>
-      <link>https://debloga.vercel.app/categories/digtital-forensics/</link>
-      <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/digtital-forensics/</guid>
+      <title>development</title>
+      <link>https://debloga.vercel.app/categories/development/</link>
+      <pubDate>Sun, 11 Feb 2024 12:23:59 +0530</pubDate>
+      <guid>https://debloga.vercel.app/categories/development/</guid>
       <description></description>
     </item>
     <item>
       <title>general</title>
       <link>https://debloga.vercel.app/categories/general/</link>
-      <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
+      <pubDate>Sun, 11 Feb 2024 12:23:59 +0530</pubDate>
       <guid>https://debloga.vercel.app/categories/general/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>programming</title>
+      <link>https://debloga.vercel.app/categories/programming/</link>
+      <pubDate>Sun, 11 Feb 2024 12:23:59 +0530</pubDate>
+      <guid>https://debloga.vercel.app/categories/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>digtital-forensics</title>
+      <link>https://debloga.vercel.app/categories/digtital-forensics/</link>
+      <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
+      <guid>https://debloga.vercel.app/categories/digtital-forensics/</guid>
       <description></description>
     </item>
     <item>

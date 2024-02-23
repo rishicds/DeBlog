@@ -5,7 +5,7 @@ title = 'deBlog'
 paginate = 4
 
 [params]
-  description = "The fastest blog"
+  description = "The fastest blogsite"
   dateFormat = "Jan 2, 2006"
 
 [taxonomies]

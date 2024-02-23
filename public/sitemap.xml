@@ -3,18 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://debloga.vercel.app/authors/</loc>
-    <lastmod>2024-02-05T12:23:59+05:30</lastmod>
+    <lastmod>2024-02-11T12:23:59+05:30</lastmod>
+  </url><url>
+    <loc>https://debloga.vercel.app/learnc/</loc>
+    <lastmod>2024-02-11T12:23:59+05:30</lastmod>
   </url><url>
     <loc>https://debloga.vercel.app/categories/</loc>
-    <lastmod>2024-02-05T12:23:59+05:30</lastmod>
+    <lastmod>2024-02-11T12:23:59+05:30</lastmod>
   </url><url>
     <loc>https://debloga.vercel.app/</loc>
-    <lastmod>2024-02-05T12:23:59+05:30</lastmod>
+    <lastmod>2024-02-11T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>https://debloga.vercel.app/categories/digtital-forensics/</loc>
-    <lastmod>2024-02-05T12:23:59+05:30</lastmod>
+    <loc>https://debloga.vercel.app/categories/development/</loc>
+    <lastmod>2024-02-11T12:23:59+05:30</lastmod>
   </url><url>
     <loc>https://debloga.vercel.app/categories/general/</loc>
+    <lastmod>2024-02-11T12:23:59+05:30</lastmod>
+  </url><url>
+    <loc>https://debloga.vercel.app/categories/programming/</loc>
+    <lastmod>2024-02-11T12:23:59+05:30</lastmod>
+  </url><url>
+    <loc>https://debloga.vercel.app/authors/rishi-paul/</loc>
+    <lastmod>2024-02-11T12:23:59+05:30</lastmod>
+  </url><url>
+    <loc>https://debloga.vercel.app/categories/digtital-forensics/</loc>
     <lastmod>2024-02-05T12:23:59+05:30</lastmod>
   </url><url>
     <loc>https://debloga.vercel.app/categories/malware-evasion/</loc>
@@ -42,9 +54,6 @@
     <lastmod>2023-12-06T15:20:24+05:30</lastmod>
   </url><url>
     <loc>https://debloga.vercel.app/my-first-post/</loc>
-    <lastmod>2023-12-05T16:55:24+01:00</lastmod>
-  </url><url>
-    <loc>https://debloga.vercel.app/authors/rishi-paul/</loc>
     <lastmod>2023-12-05T16:55:24+01:00</lastmod>
   </url><url>
     <loc>https://debloga.vercel.app/categories/tech/</loc>
