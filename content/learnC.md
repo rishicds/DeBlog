@@ -19,15 +19,15 @@ Why do I need to learn about the 3rd letter of the alphabet!? Is something that 
 
 C is a low-level language.
 
-It didn’t use to be. Back in the day when people carved punch cards out of granite, C was an incredible way to be free of the drudgery of lower-level languages like [assembly](https://en.wikipedia.org/wiki/Assembly_language)[19](https://beej.us/guide/bgc/html/split/function-specifiers-alignment-specifiersoperators.html#fn19).
+It didn’t use to be. Back in the day when people carved punch cards out of granite, C was an incredible way to be free of the drudgery of lower-level languages like [assembly](https://en.wikipedia.org/wiki/Assembly_language).
 
 But now in these modern times, current-generation languages offer all kinds of features that didn’t exist in 1972 when C was invented. This means C is a pretty basic language with not a lot of features. It can do _anything_, but it can make you work for it.
 
 So why would we even use it today?
 
-As a learning tool: not only is C a venerable piece of computing history, but it is connected to the [bare metal](https://en.wikipedia.org/wiki/Bare_machine)[20](https://beej.us/guide/bgc/html/split/function-specifiers-alignment-specifiersoperators.html#fn20) in a way that present-day languages are not. When you learn C, you learn about how software interfaces with computer memory at a low level. There are no seatbelts. You’ll write software that crashes, I assure you. And that’s all part of the fun!
+As a learning tool: not only is C a venerable piece of computing history, but it is connected to the [bare metal](https://en.wikipedia.org/wiki/Bare_machine) in a way that present-day languages are not. When you learn C, you learn about how software interfaces with computer memory at a low level. There are no seatbelts. You’ll write software that crashes, I assure you. And that’s all part of the fun!
 
-As a useful tool: C still is used for certain applications, such as building [operating systems](https://en.wikipedia.org/wiki/Operating_system)[21](https://beej.us/guide/bgc/html/split/function-specifiers-alignment-specifiersoperators.html#fn21) or in [embedded systems](https://en.wikipedia.org/wiki/Embedded_system)[22](https://beej.us/guide/bgc/html/split/function-specifiers-alignment-specifiersoperators.html#fn22). (Though the [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language))[23](https://beej.us/guide/bgc/html/split/function-specifiers-alignment-specifiersoperators.html#fn23) programming language is eyeing both these fields!)
+As a useful tool: C still is used for certain applications, such as building [operating systems](https://en.wikipedia.org/wiki/Operating_system) or in [embedded systems](https://en.wikipedia.org/wiki/Embedded_system)). (Though the [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) programming language is eyeing both these fields!)
 
 This is the canonical example of a C program. Everyone uses it. 
 ```
