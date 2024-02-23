@@ -1,6 +1,6 @@
 +++
 title = 'C Demystified: Mastering Programming'
-date = 2024-02-11T12:23:59+05:30
+date = 2024-02-21T12:23:59+05:30
 draft = false
 description="Learn C from the beginning"
 image="/images/learnc/cover.jpg"
