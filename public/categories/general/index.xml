@@ -1,56 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>general on deBlog</title>
-    <link>https://debloga.vercel.app/categories/general/</link>
-    <description>Recent content in general on deBlog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>General on deBlog</title>
+    <link>http://localhost:1313/categories/general/</link>
+    <description>Recent content in General on deBlog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Feb 2024 12:23:59 +0530</lastBuildDate>
-    <atom:link href="https://debloga.vercel.app/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C Demystified: Mastering Programming</title>
-      <link>https://debloga.vercel.app/learnc/</link>
+      <link>http://localhost:1313/learnc/</link>
       <pubDate>Wed, 21 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/learnc/</guid>
-      <description>Discover one of the earliest programming languages and what it has to offer What is C?
-Why do I need to learn about the 3rd letter of the alphabet!? Is something that you’re probably thinking about right now.
-C is a low-level language.
-It didn’t use to be. Back in the day when people carved punch cards out of granite, C was an incredible way to be free of the drudgery of lower-level languages like assembly.</description>
+      <guid>http://localhost:1313/learnc/</guid>
+      <description>&lt;h1 id=&#34;discover-one-of-the-earliest-programming-languages-and-what-it-has-to-offer&#34;&gt;Discover one of the earliest programming languages and what it has to offer&lt;/h1&gt;&#xA;&lt;p&gt;What is C?&lt;br&gt;&#xA;Why do I need to learn about the 3rd letter of the alphabet!? Is something that you’re probably thinking about right now.&lt;/p&gt;&#xA;&lt;p&gt;C is a low-level language.&lt;/p&gt;&#xA;&lt;p&gt;It didn’t use to be. Back in the day when people carved punch cards out of granite, C was an incredible way to be free of the drudgery of lower-level languages like &lt;a href=&#34;https://en.wikipedia.org/wiki/Assembly_language&#34;&gt;assembly&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pixel Perfect Ploy</title>
-      <link>https://debloga.vercel.app/picture/</link>
+      <link>http://localhost:1313/picture/</link>
       <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/picture/</guid>
-      <description>Hiding exe with Image extension What we always see is not what it is- A file could look innocent but it could hide the most dangerous malware. Windows hides file extensions by default, therefore there is an infinite possible ways to send a malware unnoticed, two way of doing it is hiding/attaching it with an image-
-This blog is only for educational purpose and in no way intended for malicious purpose.</description>
+      <guid>http://localhost:1313/picture/</guid>
+      <description>&lt;h1 id=&#34;hiding-exe-with-image-extension&#34;&gt;Hiding exe with Image extension&lt;/h1&gt;&#xA;&lt;p&gt;What we always see is not what it is- A file could look innocent but it could hide the most dangerous malware. Windows hides file extensions by default, therefore there is an infinite possible ways to send a malware unnoticed, two way of doing it is hiding/attaching it with an image-&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This blog is only for educational purpose and in no way intended for malicious purpose.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>RFID-Radio Frequency Identification</title>
-      <link>https://debloga.vercel.app/rfid/</link>
+      <link>http://localhost:1313/rfid/</link>
       <pubDate>Wed, 06 Dec 2023 15:20:24 +0530</pubDate>
-      <guid>https://debloga.vercel.app/rfid/</guid>
-      <description>RFID (RADIO FREQUENCY INDENTIFICATION)
-Radio Frequency Identification (RFID) refers to a wireless system comprised of two components: tags and readers. The reader is a device that has one or more antennas that emit radio waves and receive signals back from the RFID tag. Tags, which use radio waves to communicate their identity and other information to nearby readers, can be passive or active. Passive RFID tags are powered by the reader and do not have a battery.</description>
+      <guid>http://localhost:1313/rfid/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;RFID (RADIO FREQUENCY INDENTIFICATION)&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Radio Frequency Identification (RFID) refers to a wireless system comprised of two components: tags and readers. The reader is a device that has one or more antennas that emit radio waves and receive signals back from the RFID tag. Tags, which use radio waves to communicate their identity and other information to nearby readers, can be passive or active. Passive RFID tags are powered by the reader and do not have a battery. Active RFID tags are powered by batteries.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Meet deBlog</title>
-      <link>https://debloga.vercel.app/my-first-post/</link>
+      <link>http://localhost:1313/my-first-post/</link>
       <pubDate>Tue, 05 Dec 2023 16:55:24 +0100</pubDate>
-      <guid>https://debloga.vercel.app/my-first-post/</guid>
-      <description>Welcome to deBlog! Built with HUGO, The world’s fastest framework for building websites.
-Features of deBlog Extremely fast
-Uses minimal bandwith
-Great SEO SEO improvement Use SVG and Webp instead of JPGs, PNGS etc. Use proper metadata Use Linkable assets Target Brand New Keywords How can I contribute? If you wish to add your own article or make changes in order to improve this site, head to the &amp;ldquo;deBlog repository&amp;rdquo;.</description>
+      <guid>http://localhost:1313/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-deblog&#34;&gt;Welcome to deBlog!&lt;/h1&gt;&#xA;&lt;p&gt;Built with HUGO, The world’s fastest framework for building websites.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features-of-deblog&#34;&gt;Features of deBlog&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Extremely fast&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Uses minimal bandwith&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Great SEO&lt;/strong&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/deblog%20stats.webp&#34; alt=&#34;SEO ranking&#34;&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;seo-improvement&#34;&gt;SEO improvement&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use SVG and Webp instead of JPGs, PNGS etc.&lt;/li&gt;&#xA;&lt;li&gt;Use proper metadata&lt;/li&gt;&#xA;&lt;li&gt;Use Linkable assets&lt;/li&gt;&#xA;&lt;li&gt;Target Brand New Keywords&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-can-i-contribute&#34;&gt;How can I contribute?&lt;/h2&gt;&#xA;&lt;p&gt;If you wish to add your own article or make changes in order to improve this site, head to the &amp;ldquo;&lt;a href=&#34;https://github.com/rishicds/DeBlog&#34;&gt;deBlog repository&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SOCIAL MEDIA: THE SURFACE DARK WEB</title>
-      <link>https://debloga.vercel.app/nirjhar/</link>
+      <link>http://localhost:1313/nirjhar/</link>
       <pubDate>Tue, 05 Dec 2023 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/nirjhar/</guid>
-      <description>SOCIAL MEDIA: THE SURFACE DARK WEB
-In recent years, the social media has become the common hunting grounds for all hackers/criminals which can affect to a national level or just to seek revenge to an individual. Pentagon officials are increasingly worried that state-backed hackers/criminals are using social media platforms such as Twitter and Facebook to break into computer networks of high ranked or individuals. Therefore exercising such power comes at a high stake.</description>
+      <guid>http://localhost:1313/nirjhar/</guid>
+      <description>&lt;p&gt;SOCIAL MEDIA: THE SURFACE DARK WEB&lt;/p&gt;&#xA;&lt;p&gt;In recent years, the social media has become the common hunting grounds for all hackers/criminals which can affect to a national level or just to seek revenge to an individual. Pentagon officials are increasingly worried that state-backed hackers/criminals are using social media platforms such as Twitter and Facebook to break into computer networks of high ranked or individuals. Therefore exercising such power comes at a high stake.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

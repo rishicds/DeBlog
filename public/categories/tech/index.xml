@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tech on deBlog</title>
-    <link>https://debloga.vercel.app/categories/tech/</link>
-    <description>Recent content in tech on deBlog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Tech on deBlog</title>
+    <link>http://localhost:1313/categories/tech/</link>
+    <description>Recent content in Tech on deBlog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Dec 2023 16:55:24 +0100</lastBuildDate>
-    <atom:link href="https://debloga.vercel.app/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Meet deBlog</title>
-      <link>https://debloga.vercel.app/my-first-post/</link>
+      <link>http://localhost:1313/my-first-post/</link>
       <pubDate>Tue, 05 Dec 2023 16:55:24 +0100</pubDate>
-      <guid>https://debloga.vercel.app/my-first-post/</guid>
-      <description>Welcome to deBlog! Built with HUGO, The world’s fastest framework for building websites.
-Features of deBlog Extremely fast
-Uses minimal bandwith
-Great SEO SEO improvement Use SVG and Webp instead of JPGs, PNGS etc. Use proper metadata Use Linkable assets Target Brand New Keywords How can I contribute? If you wish to add your own article or make changes in order to improve this site, head to the &amp;ldquo;deBlog repository&amp;rdquo;.</description>
+      <guid>http://localhost:1313/my-first-post/</guid>
+      <description>&lt;h1 id=&#34;welcome-to-deblog&#34;&gt;Welcome to deBlog!&lt;/h1&gt;&#xA;&lt;p&gt;Built with HUGO, The world’s fastest framework for building websites.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features-of-deblog&#34;&gt;Features of deBlog&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Extremely fast&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Uses minimal bandwith&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Great SEO&lt;/strong&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/deblog%20stats.webp&#34; alt=&#34;SEO ranking&#34;&gt;&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;seo-improvement&#34;&gt;SEO improvement&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Use SVG and Webp instead of JPGs, PNGS etc.&lt;/li&gt;&#xA;&lt;li&gt;Use proper metadata&lt;/li&gt;&#xA;&lt;li&gt;Use Linkable assets&lt;/li&gt;&#xA;&lt;li&gt;Target Brand New Keywords&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;how-can-i-contribute&#34;&gt;How can I contribute?&lt;/h2&gt;&#xA;&lt;p&gt;If you wish to add your own article or make changes in order to improve this site, head to the &amp;ldquo;&lt;a href=&#34;https://github.com/rishicds/DeBlog&#34;&gt;deBlog repository&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

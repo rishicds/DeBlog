@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=A&#32;deep&#32;dive&#32;into&#32;a&#32;real-world&#32;GuLoader&#32;malware&#32;incident&#32;disguised&#32;as&#32;a&#32;Swift&#32;payment&#32;request>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" href="/images/favicon.png" />
+  <title>Inside a Real Malware Email: Dissecting a GuLoader Trojan</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+    <div class="logo">
+      <a href="/">deblog</a>
+    </div>
+    <div class="links">
+      <div class="toggle">
+        <svg
+          width="20px"
+          height="20px"
+          viewBox="-0.14 0 20.03 20.03"
+          fill="#000000"
+        >
+          <g id="moon-alt" transform="translate(-2.25 -2)">
+            <path
+              id="secondary"
+              fill="#ffe01b"
+              d="M21,12A9,9,0,0,1,3.25,14.13,6.9,6.9,0,0,0,8,16,7,7,0,0,0,11.61,3H12a9,9,0,0,1,9,9Z"
+            ></path>
+          </g>
+        </svg>
+        <div class="ball" ></div>
+        <svg width="20px" height="20px" viewBox="0 0 20 20" fill="#000000">
+          <g id="sun" transform="translate(-2 -2)">
+            <circle
+              id="secondary"
+              fill="#ffe01b"
+              cx="4"
+              cy="4"
+              r="4"
+              transform="translate(8 8)"
+            ></circle>
+            <path
+              id="primary"
+              d="M12,3V4M5.64,5.64l.7.7M3,12H4m1.64,6.36.7-.7M12,21V20m6.36-1.64-.7-.7M21,12H20M18.36,5.64l-.7.7M12,8a4,4,0,1,0,4,4A4,4,0,0,0,12,8Z"
+              fill="none"
+              stroke="#ffe01b"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </g>
+        </svg>
+      </div>
+      <a href="/">Homepage</a>
+      <a href="/categories">Categories</a>
+      <a href="/about">About</a>
+      <div class="searchButton">
+        <svg
+          width="24px"
+          height="24px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10.77 18.3C9.2807 18.3 7.82485 17.8584 6.58655 17.031C5.34825 16.2036 4.38311 15.0275 3.81318 13.6516C3.24325 12.2757 3.09413 10.7616 3.38468 9.30096C3.67523 7.84029 4.39239 6.49857 5.44548 5.44548C6.49857 4.39239 7.84029 3.67523 9.30096 3.38468C10.7616 3.09413 12.2757 3.24325 13.6516 3.81318C15.0275 4.38311 16.2036 5.34825 17.031 6.58655C17.8584 7.82485 18.3 9.2807 18.3 10.77C18.3 11.7588 18.1052 12.738 17.7268 13.6516C17.3484 14.5652 16.7937 15.3953 16.0945 16.0945C15.3953 16.7937 14.5652 17.3484 13.6516 17.7268C12.738 18.1052 11.7588 18.3 10.77 18.3ZM10.77 4.74999C9.58331 4.74999 8.42327 5.10189 7.43657 5.76118C6.44988 6.42046 5.68084 7.35754 5.22672 8.45389C4.77259 9.55025 4.65377 10.7566 4.88528 11.9205C5.11679 13.0844 5.68824 14.1535 6.52735 14.9926C7.36647 15.8317 8.43556 16.4032 9.59945 16.6347C10.7633 16.8662 11.9697 16.7474 13.0661 16.2933C14.1624 15.8391 15.0995 15.0701 15.7588 14.0834C16.4181 13.0967 16.77 11.9367 16.77 10.75C16.77 9.15869 16.1379 7.63257 15.0126 6.50735C13.8874 5.38213 12.3613 4.74999 10.77 4.74999Z"
+            fill="#cbd5e1"
+          />
+          <path
+            d="M20 20.75C19.9015 20.7504 19.8038 20.7312 19.7128 20.6934C19.6218 20.6557 19.5392 20.6001 19.47 20.53L15.34 16.4C15.2075 16.2578 15.1354 16.0697 15.1388 15.8754C15.1422 15.6811 15.221 15.4958 15.3584 15.3583C15.4958 15.2209 15.6812 15.1422 15.8755 15.1388C16.0698 15.1354 16.2578 15.2075 16.4 15.34L20.53 19.47C20.6704 19.6106 20.7493 19.8012 20.7493 20C20.7493 20.1987 20.6704 20.3893 20.53 20.53C20.4608 20.6001 20.3782 20.6557 20.2872 20.6934C20.1962 20.7312 20.0985 20.7504 20 20.75Z"
+            fill="#cbd5e1"
+          />
+        </svg>
+        <span>Search</span>
+      </div>
+    </div>
+  </nav>
+    
+<div class="single">
+  <div class="singleHead">
+    <div class="singleHeadTexts">
+      <h1 class="singleHeadTitle">Inside a Real Malware Email: Dissecting a GuLoader Trojan</h1>
+      <p class="singleHeadDesc">A deep dive into a real-world GuLoader malware incident disguised as a Swift payment request</p>
+      <div class="singleHeadDetail">
+        <img src=/images/nir.png loading="lazy" alt="" class="singleAvatar">
+        <span>
+          <a href=http://localhost:1313/authors/nirjhar-barma/>Nirjhar Barma</a>
+          
+        </span>
+        
+        <a href=http://localhost:1313/categories/cybersecurity/ class="singleCategory">cybersecurity</a>
+        
+        <a href=http://localhost:1313/categories/malware/ class="singleCategory">malware</a>
+        
+        <a href=http://localhost:1313/categories/infosec/ class="singleCategory">infosec</a>
+        
+      </div>
+      <time>Jul 10, 2025</time>
+    </div>
+    <img src=/images/malware/cover_image.png alt=Inside&#32;a&#32;Real&#32;Malware&#32;Email:&#32;Dissecting&#32;a&#32;GuLoader&#32;Trojan class="singleHeadImg">
+  </div>
+  <div class="singleBottom">
+    <div class="singleContent"><h1 id="inside-a-real-malware-email-how-i-got-a-guloaderaka-cloudeye-trojan-disguised-as-a-business-payment">Inside a Real Malware Email: How I got a GuLoader(aka CloudEyE) Trojan Disguised as a Business Payment</h1>
+<h2 id="introduction">Introduction</h2>
+<p>I didn’t expect a cyber attack disguised as a Swift transaction to land in my inbox. But on July 10, 2025, I received a very polished email that claimed to be from a business contact, complete with official-sounding language, phone numbers, and even a company website.</p>
+<p>The subject?</p>
+<blockquote>
+<p>“Fw: Swift Copy:0008/025/05/06_dt.07/09/25 by SANWAR MAL SUREKA Insurance &amp; Investment Advisors”</p></blockquote>
+<p>The message claimed to be from “Sreekumar K S”  of Mor Aqua Fresh, referencing an overdue balance and requesting payment confirmation. It included a password-protected .lzh archive, presented as supporting documentation, and even provided a password for access — a tactic often used in legitimate financial correspondence.</p>
+<p>At first glance, everything seemed in order: the email was polite, well-formatted, and included branding and contact numbers. But behind the professional facade lurked something far more sinister.</p>
+<p><img src="images/malware/mail.png" alt="Cover Image"></p>
+<p>This was no payment request — it was a delivery mechanism for GuLoader, a sophisticated malware dropper often used to load Remote Access Trojans (RATs), credential stealers, and surveillance tools. What followed was a deep dive into obfuscation, memory injection, and the kind of social engineering that even seasoned professionals must stay vigilant against.</p>
+<p>In this post, I’ll walk you through how I analyzed the threat, uncovered its behavior, and understood how it cleverly slipped past even Gmail’s robust security filters.</p>
+<hr>
+<h2 id="-what-is-guloader">🦠 What is GuLoader?</h2>
+<p>GuLoader (also known as CloudEyE) is a popular malware loader first observed in 2019. It is commonly used to:</p>
+<ul>
+<li>Deliver second-stage malware</li>
+<li>Evade antivirus detection using in-memory injection</li>
+<li>Establish persistence while avoiding behavioural sandboxes and VMs</li>
+</ul>
+<p>It typically arrives via phishing emails and employs techniques like:</p>
+<ul>
+<li>NSIS packing</li>
+<li>Shellcode obfuscation</li>
+<li>Process hollowing and memory injection</li>
+<li>Anti-VM/anti-debug checks</li>
+</ul>
+<p>The malware is widely sold on underground forums and used by various threat groups due to its modularity and stealth.</p>
+<hr>
+<h2 id="stage-1-the-email-lure">Stage 1: The Email Lure</h2>
+<h3 id="-email-header-analysis">📧 Email Header Analysis</h3>
+<p>The email came from a legit-looking Gmail address (<code>as21185@gmaildotcom</code>) with valid SPF, DKIM and DMARC authentication.</p>
+<p><img src="/images/malware/mail_info.png" alt="Mail Info"></p>
+<p><img src="/images/malware/original_mail.png" alt="Original Mail"></p>
+<hr>
+<h3 id="why-it-was-effective">Why it was effective:</h3>
+<ul>
+<li>Social Engineering: It used urgency and financial context (payment confirmation)</li>
+<li>Impersonation: Real-sounding names, companies and contact info</li>
+<li>Password-Protected Archive: Prevented antivirus scanners from detecting the contents</li>
+<li>Attachment Format: “.lzh” is uncommon, avoiding most signature-based detections</li>
+</ul>
+<hr>
+<h3 id="-red-flags">🚩 Red Flags:</h3>
+<ul>
+<li>No prior relationship or context for the financial transaction</li>
+<li>Generic language and urgency to confirm payment</li>
+<li>Foreign messaging platforms (QQ, wechat)</li>
+<li>BCC delivery to hide recipient list and enable mass phishing</li>
+</ul>
+<hr>
+<h2 id="stage-2-static-information">Stage 2: Static Information</h2>
+<h3 id="-archive-contents">📁 Archive Contents</h3>
+<p>Once extracted using the password, the “.lzh” file revealed a Windows executable:</p>
+<p><strong>Attached File</strong></p>
+<ul>
+<li>Filename: <code>091208478 DTD 10.07.2025 09750913 640976289-85665.exe</code> (inside .lzh)</li>
+<li>Password: <code>310921680</code></li>
+<li>Type: PE32 executable (GUI) - Nullsoft Installer (NSIS)</li>
+<li>Size: ~1.2 MB</li>
+</ul>
+<p><img src="/images/malware/file_name.png" alt="Files"></p>
+<p><strong>Metadata:</strong><br>
+<img src="/images/malware/metadata.png" alt="Metadata"></p>
+<p>This is consistent with GuLoader characteristics – fake metadata, NSIS-based shellcode loader and packing to avoid detection.</p>
+<p><strong>TRiD:</strong><br>
+<img src="/images/malware/TRiD.png" alt="TRiD analysis"></p>
+<hr>
+<h2 id="stage-3-dynamic-behaviour-analysis">Stage 3: Dynamic Behaviour Analysis</h2>
+<p><strong>Behaviour Summary (from Any.Run)</strong></p>
+<ul>
+<li>Drops a DLL (<code>system.dll</code>) to <code>%TEMP%</code></li>
+<li>Creates autorun registry keys for persistence</li>
+<li>Connects to suspicious external IPs on uncommon ports</li>
+<li>Uses <code>VirtualAlloc</code>, <code>WriteProcessMemory</code>, <code>Createthread</code> for shellcode injection</li>
+<li>Reads system &amp; browser settings</li>
+<li>Executes secondary process (<code>wmlaunch.exe</code>, <code>slui.exe</code>)</li>
+</ul>
+<p><img src="/images/malware/behaviour_analysis.png" alt="Behaviour Analysis"></p>
+<hr>
+<h3 id="technique-used">Technique Used</h3>
+<ul>
+<li>NSIS Packing – To hide the real payload</li>
+<li>Shellcode Loader – Injects payload directly into memory</li>
+<li>Registry Persistence – Auto-runs on startup</li>
+<li>Anti-VM/Anti-Debug – Behaviour may change in sandbox environments</li>
+</ul>
+<hr>
+<h2 id="stage-4-c2-infrastructure--payload-analysis">Stage 4: C2 Infrastructure &amp; Payload Analysis</h2>
+<p>Although the report showed no plaintext C2 domain, analysis indicates that GuLoader:</p>
+<ul>
+<li>Connects to dynamic C2 domains over HTTPS</li>
+<li>Downloads and injects encrypted second-stage payloads like AgentTesla, FormBook or Remcos</li>
+</ul>
+<p>Even without clear C2 in strings, the behaviour matches known GuLoader indicators:</p>
+<ul>
+<li>Process hollowing</li>
+<li>Memory injection</li>
+<li>Registry persistence</li>
+</ul>
+<p>GuLoader is a loader trojan sold on underground markets. It’s widely used by threat actors to:</p>
+<ul>
+<li>Bypass antivirus</li>
+<li>Load info-stealers (AgentTesla, FormBook, etc)</li>
+<li>Maintain stealth (in-memory execution)</li>
+</ul>
+<hr>
+<h3 id="detection-engines-from-av-scanners">Detection Engines (from AV Scanners):</h3>
+<ul>
+<li>Microsoft: <code>Trojan:Win32/GuLoader.RAZ!MTB</code></li>
+<li>Kaspersky: <code>HEUR:Trojan.Win32.Makoob.gen</code></li>
+<li>Malwarebytes: <code>Trojan.GuLoader</code></li>
+<li>Symantec: <code>Scr.NSISHeur!gen3</code></li>
+</ul>
+<hr>
+<h2 id="stage-5-indicators-of-compromise-ioc">Stage 5: Indicators of Compromise (IOC)</h2>
+<p><img src="/images/malware/ioc.png" alt="IOCs"></p>
+<h3 id="hashes">Hashes:</h3>
+<ul>
+<li>MD5: <code>F54C3C32364C91454BEA24A1E6B98713</code></li>
+<li>SHA256: <code>4668DC8468E677499828C63E313945125134803D6C96FE431BB71C332A64BE49</code></li>
+</ul>
+<h3 id="files">Files:</h3>
+<ul>
+<li><code>%TEMP%\System.dll</code></li>
+<li><code>HKCU\Software\Locales Approx</code></li>
+<li><code>HKCU\washoan\Uninstall\blodfattigste</code></li>
+<li><code>HKCU\bowline\elice\lseplaners</code></li>
+</ul>
+<h3 id="processes">Processes:</h3>
+<ul>
+<li><code>wmlaunch.exe</code></li>
+<li><code>slui.exe</code></li>
+</ul>
+<p><strong>Processes</strong></p>
+<ul>
+<li>Monitored processes – 1</li>
+<li>Malicious processes – 1</li>
+<li>Suspicious processes – 1</li>
+</ul>
+<p><strong>Process 2040 –</strong></p>
+<p><img src="/images/malware/2040.png" alt="2040"></p>
+<p><strong>Process 5612 –</strong></p>
+<p><img src="/images/malware/5612.png" alt="5612"></p>
+<p><strong>Process 7092 –</strong></p>
+<p><img src="/images/malware/7092.png" alt="7092"></p>
+<hr>
+<h1 id="behaviour-graph">Behaviour graph</h1>
+<p><img src="/images/malware/behaviour_graph.png" alt="Behaviour graph"></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>This real-world attack shows how easily cybercriminals can blend into daily business communication. The email successfully bypassed:</p>
+<ul>
+<li>Gmail spam/phishing filters</li>
+<li>Signature-based antivirus</li>
+<li>User skepticism — with professional formatting and emotional appeal</li>
+</ul>
+<p>The payload, GuLoader, delivered stealthy second-stage malware using:</p>
+<ul>
+<li>Memory injection</li>
+<li>Process hollowing</li>
+<li>Registry-based persistence</li>
+</ul>
+<p>This incident is a stark reminder that security is not just about technology — it’s about awareness. Even the most well-crafted emails must be scrutinized, especially when they include executable attachments.</p>
+<hr>
+<h2 id="tools-i-used">Tools I used:</h2>
+<ul>
+<li>Any.Run (Interactive sandbox)</li>
+<li>ExifTool (metadata)</li>
+<li>Strings/hexdump (static analysis)</li>
+<li>x64dbg (debugging)</li>
+<li>PEStudio, DIE, cyberchef</li>
+</ul>
+<hr>
+<h2 id="links">[LINKS]</h2>
+<ul>
+<li><strong>Any.Run link</strong>: <img src="https://app.any.run/tasks/c653a81e-4e54-4e2a-973f-e32e39b9d4fa" alt="Any.run/Task"></li>
+<li><strong>Report link</strong>: <img src="https://any.run/report/4668dc8468e677499828c63e313945125134803D6C96FE431BB71C332A64BE49/c653a81e-4e54-4e2a-973f-e32e39b9d4fa#i-table-processes-2ca8267e-9675-43b8-b0c9-196debf87044" alt="Any.run/report"></li>
+<li><strong>Malware link</strong>: <img src="https://cybersharing.net/s/629605c93acb4598" alt="Cybersharing.net"> <em>(Use isolated virtual machine to run)</em></li>
+</ul>
+</div>
+    <div class="singleRightBar">
+      <div class="rightBar">
+  </div>
+    </div>
+  </div>
+</div>
+
+    <div class="footer">
+    <div class="footerLinks">
+      <a href="/">deblog</a> |
+      <a href="/categories">categories</a> |
+      <a href="/sitemap.xml">sitemap</a>
+    </div>
+    <div class="social">
+      <a href="http://discordapp.com/users/291581408097599490" aria-label="Discord">
+        <svg width="25px" height="25px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+          
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          
+          <g id="SVGRepo_iconCarrier">
+          
+          <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" d="m68 138-8 16c-10.19-4.246-20.742-8.492-31.96-15.8-3.912-2.549-6.284-6.88-6.378-11.548-.488-23.964 5.134-48.056 19.369-73.528 1.863-3.334 4.967-5.778 8.567-7.056C58.186 43.02 64.016 40.664 74 39l6 11s6-2 16-2 16 2 16 2l6-11c9.984 1.664 15.814 4.02 24.402 7.068 3.6 1.278 6.704 3.722 8.567 7.056 14.235 25.472 19.857 49.564 19.37 73.528-.095 4.668-2.467 8.999-6.379 11.548-11.218 7.308-21.769 11.554-31.96 15.8l-8-16m-68-8s20 10 40 10 40-10 40-10"/>
+          
+          <ellipse cx="71" cy="101" fill="#000000" rx="13" ry="15"/>
+          
+          <ellipse cx="121" cy="101" fill="#000000" rx="13" ry="15"/>
+          
+          </g>
+          
+          </svg>
+      </a>
+      <a href="https://github.com/rishicds" aria-label="github">
+        <svg width="25px" height="25px" viewBox="-2 -2 24.00 24.00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+
+          <g id="SVGRepo_bgCarrier" stroke-width="0">
+          
+          <path transform="translate(-2, -2), scale(0.75)" d="M16,28.339087860924856C20.073473636698342,28.478144819582482,24.626258334365666,28.090581218812126,27.08210485050772,24.83768371108452C29.4926927427856,21.644733624257718,28.007198524398913,17.36049969737119,27.255118940622165,13.431092548318015C26.447188531342967,9.209880332694919,26.54883827497542,3.9980698728803743,22.719846603399553,2.046094746356893C18.85274130396307,0.07468973856264105,14.559718825253338,3.008362955454098,10.698117185434867,4.990526893436339C7.019211921524756,6.878912601113439,2.854846325553261,8.759428190023694,1.8341584621409748,12.766739109738749C0.7930216252966653,16.854334509625,2.9893160428430297,20.991888363135956,5.827724745323101,24.1121188199918C8.42727223579758,26.969771858729473,12.139111911043024,28.207287976292985,16,28.339087860924856" fill="#ffffff" strokewidth="0"/>
+          
+          </g>
+          
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.76"/>
+          
+          <g id="SVGRepo_iconCarrier"> <title>github [#142]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </g>
+      </a>
+      <a href="" aria-label="linkedin">
+        <svg width="25px" height="25px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+          <g id="SVGRepo_bgCarrier" stroke-width="0">
+          
+          <path transform="translate(-2.4, -2.4), scale(0.8999999999999999)" d="M16,27.787690052141745C18.429493108546882,27.78866394445854,20.66773779547178,30.00260258362792,23.00942249592835,29.355338745158114C25.343817049839206,28.710089972267067,27.18084983652643,26.616802299377074,28.194250801797907,24.41708359103437C29.17207767320204,22.29458308406901,28.266349899777897,19.84197412661847,28.464900790018454,17.513512974592764C28.655508758102567,15.27820066542765,30.08037616805896,13.058431828849987,29.34350376613103,10.939476524866633C28.605968781630587,8.818615893919379,26.174898968625794,7.896559637589569,24.57328641197811,6.322760130774126C22.881040487138304,4.659901163498197,21.92152978997629,1.8866166397192476,19.60576427861381,1.3708392540469223C17.282001954878016,0.8532807834765859,15.07813342015897,2.6185621397878753,12.978246028433698,3.7402622109951142C11.224635507555817,4.676991034592827,10.025918576076728,6.290741827837844,8.361072621480709,7.377433456294426C6.371127120704539,8.676326672695957,3.538940345995555,8.800464696885392,2.2088909084999813,10.769722216228898C0.8713024325277396,12.750141958411843,0.41322274015680527,15.575658482460181,1.3346401781640296,17.78069707423537C2.272323848004488,20.024662288685093,5.65002947996242,20.18952143024435,6.992525831079691,22.217410504030855C8.375668373346672,24.30669711298007,6.8624616769009545,28.031856333326736,8.993526291530806,29.3497203000683C11.058652364622983,30.62680745163709,13.571894495067383,27.786716716062998,16,27.787690052141745" fill="#ffffff" strokewidth="0"/>
+          
+          </g>
+          
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+          
+          <g id="SVGRepo_iconCarrier"> <path d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z" fill="#0F0F0F"/> <path d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z" fill="#0F0F0F"/> <path d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z" fill="#0F0F0F"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#0F0F0F"/> </g>
+          
+          </svg>
+      </a>
+    </div>
+    <div>Made by Rishi | All rights reserved.</div>
+  </div>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+</html>

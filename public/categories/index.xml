@@ -2,73 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on deBlog</title>
-    <link>https://debloga.vercel.app/categories/</link>
+    <link>http://localhost:1313/categories/</link>
     <description>Recent content in Categories on deBlog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Feb 2024 12:23:59 +0530</lastBuildDate>
-    <atom:link href="https://debloga.vercel.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Jul 2025 14:15:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>development</title>
-      <link>https://debloga.vercel.app/categories/development/</link>
-      <pubDate>Wed, 21 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/development/</guid>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/categories/cybersecurity/</link>
+      <pubDate>Thu, 10 Jul 2025 14:15:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/cybersecurity/</guid>
       <description></description>
     </item>
     <item>
-      <title>general</title>
-      <link>https://debloga.vercel.app/categories/general/</link>
-      <pubDate>Wed, 21 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/general/</guid>
+      <title>Infosec</title>
+      <link>http://localhost:1313/categories/infosec/</link>
+      <pubDate>Thu, 10 Jul 2025 14:15:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/infosec/</guid>
       <description></description>
     </item>
     <item>
-      <title>programming</title>
-      <link>https://debloga.vercel.app/categories/programming/</link>
-      <pubDate>Wed, 21 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/programming/</guid>
+      <title>Malware</title>
+      <link>http://localhost:1313/categories/malware/</link>
+      <pubDate>Thu, 10 Jul 2025 14:15:00 +0530</pubDate>
+      <guid>http://localhost:1313/categories/malware/</guid>
       <description></description>
     </item>
     <item>
-      <title>digtital-forensics</title>
-      <link>https://debloga.vercel.app/categories/digtital-forensics/</link>
+      <title>Development</title>
+      <link>http://localhost:1313/categories/development/</link>
+      <pubDate>Wed, 21 Feb 2024 12:23:59 +0530</pubDate>
+      <guid>http://localhost:1313/categories/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>General</title>
+      <link>http://localhost:1313/categories/general/</link>
+      <pubDate>Wed, 21 Feb 2024 12:23:59 +0530</pubDate>
+      <guid>http://localhost:1313/categories/general/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/categories/programming/</link>
+      <pubDate>Wed, 21 Feb 2024 12:23:59 +0530</pubDate>
+      <guid>http://localhost:1313/categories/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Digtital-Forensics</title>
+      <link>http://localhost:1313/categories/digtital-forensics/</link>
       <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/digtital-forensics/</guid>
+      <guid>http://localhost:1313/categories/digtital-forensics/</guid>
       <description></description>
     </item>
     <item>
-      <title>malware-evasion</title>
-      <link>https://debloga.vercel.app/categories/malware-evasion/</link>
+      <title>Malware-Evasion</title>
+      <link>http://localhost:1313/categories/malware-evasion/</link>
       <pubDate>Mon, 05 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/malware-evasion/</guid>
+      <guid>http://localhost:1313/categories/malware-evasion/</guid>
       <description></description>
     </item>
     <item>
-      <title>hacking</title>
-      <link>https://debloga.vercel.app/categories/hacking/</link>
+      <title>Hacking</title>
+      <link>http://localhost:1313/categories/hacking/</link>
       <pubDate>Wed, 06 Dec 2023 15:20:24 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/hacking/</guid>
+      <guid>http://localhost:1313/categories/hacking/</guid>
       <description></description>
     </item>
     <item>
-      <title>osint</title>
-      <link>https://debloga.vercel.app/categories/osint/</link>
+      <title>Osint</title>
+      <link>http://localhost:1313/categories/osint/</link>
       <pubDate>Wed, 06 Dec 2023 15:20:24 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/osint/</guid>
+      <guid>http://localhost:1313/categories/osint/</guid>
       <description></description>
     </item>
     <item>
-      <title>tech</title>
-      <link>https://debloga.vercel.app/categories/tech/</link>
+      <title>Tech</title>
+      <link>http://localhost:1313/categories/tech/</link>
       <pubDate>Tue, 05 Dec 2023 16:55:24 +0100</pubDate>
-      <guid>https://debloga.vercel.app/categories/tech/</guid>
+      <guid>http://localhost:1313/categories/tech/</guid>
       <description></description>
     </item>
     <item>
-      <title>dark-web</title>
-      <link>https://debloga.vercel.app/categories/dark-web/</link>
+      <title>Dark-Web</title>
+      <link>http://localhost:1313/categories/dark-web/</link>
       <pubDate>Tue, 05 Dec 2023 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/categories/dark-web/</guid>
+      <guid>http://localhost:1313/categories/dark-web/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>development on deBlog</title>
-    <link>https://debloga.vercel.app/categories/development/</link>
-    <description>Recent content in development on deBlog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Development on deBlog</title>
+    <link>http://localhost:1313/categories/development/</link>
+    <description>Recent content in Development on deBlog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 21 Feb 2024 12:23:59 +0530</lastBuildDate>
-    <atom:link href="https://debloga.vercel.app/categories/development/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C Demystified: Mastering Programming</title>
-      <link>https://debloga.vercel.app/learnc/</link>
+      <link>http://localhost:1313/learnc/</link>
       <pubDate>Wed, 21 Feb 2024 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/learnc/</guid>
-      <description>Discover one of the earliest programming languages and what it has to offer What is C?
-Why do I need to learn about the 3rd letter of the alphabet!? Is something that you’re probably thinking about right now.
-C is a low-level language.
-It didn’t use to be. Back in the day when people carved punch cards out of granite, C was an incredible way to be free of the drudgery of lower-level languages like assembly.</description>
+      <guid>http://localhost:1313/learnc/</guid>
+      <description>&lt;h1 id=&#34;discover-one-of-the-earliest-programming-languages-and-what-it-has-to-offer&#34;&gt;Discover one of the earliest programming languages and what it has to offer&lt;/h1&gt;&#xA;&lt;p&gt;What is C?&lt;br&gt;&#xA;Why do I need to learn about the 3rd letter of the alphabet!? Is something that you’re probably thinking about right now.&lt;/p&gt;&#xA;&lt;p&gt;C is a low-level language.&lt;/p&gt;&#xA;&lt;p&gt;It didn’t use to be. Back in the day when people carved punch cards out of granite, C was an incredible way to be free of the drudgery of lower-level languages like &lt;a href=&#34;https://en.wikipedia.org/wiki/Assembly_language&#34;&gt;assembly&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

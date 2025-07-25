@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>dark-web on deBlog</title>
-    <link>https://debloga.vercel.app/categories/dark-web/</link>
-    <description>Recent content in dark-web on deBlog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Dark-Web on deBlog</title>
+    <link>http://localhost:1313/categories/dark-web/</link>
+    <description>Recent content in Dark-Web on deBlog</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Dec 2023 12:23:59 +0530</lastBuildDate>
-    <atom:link href="https://debloga.vercel.app/categories/dark-web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/dark-web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SOCIAL MEDIA: THE SURFACE DARK WEB</title>
-      <link>https://debloga.vercel.app/nirjhar/</link>
+      <link>http://localhost:1313/nirjhar/</link>
       <pubDate>Tue, 05 Dec 2023 12:23:59 +0530</pubDate>
-      <guid>https://debloga.vercel.app/nirjhar/</guid>
-      <description>SOCIAL MEDIA: THE SURFACE DARK WEB
-In recent years, the social media has become the common hunting grounds for all hackers/criminals which can affect to a national level or just to seek revenge to an individual. Pentagon officials are increasingly worried that state-backed hackers/criminals are using social media platforms such as Twitter and Facebook to break into computer networks of high ranked or individuals. Therefore exercising such power comes at a high stake.</description>
+      <guid>http://localhost:1313/nirjhar/</guid>
+      <description>&lt;p&gt;SOCIAL MEDIA: THE SURFACE DARK WEB&lt;/p&gt;&#xA;&lt;p&gt;In recent years, the social media has become the common hunting grounds for all hackers/criminals which can affect to a national level or just to seek revenge to an individual. Pentagon officials are increasingly worried that state-backed hackers/criminals are using social media platforms such as Twitter and Facebook to break into computer networks of high ranked or individuals. Therefore exercising such power comes at a high stake.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

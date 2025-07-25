@@ -2,7 +2,9 @@ baseURL = 'https://debloga.vercel.app/'
 languageCode = 'en-us'
 title = 'deBlog'
 
-paginate = 4
+
+[pagination]
+  pagerSize = 4
 
 [params]
   description = "The fastest blogsite"
