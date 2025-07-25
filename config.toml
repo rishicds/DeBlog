@@ -1,0 +1,14 @@
+baseURL = 'https://debloga.vercel.app/'
+languageCode = 'en-us'
+title = 'deBlog'
+
+[pagination]
+  pagerSize = 4
+
+[params]
+  description = "The fastest blogsite"
+  dateFormat = "Jan 2, 2006"
+
+[taxonomies]
+  category = "categories"
+  author = "authors"

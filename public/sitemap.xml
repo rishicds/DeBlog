@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/authors/</loc>
+    <loc>https://debloga.vercel.app/authors/</loc>
     <lastmod>2025-07-10T14:15:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://debloga.vercel.app/categories/</loc>
     <lastmod>2025-07-10T14:15:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/cybersecurity/</loc>
+    <loc>https://debloga.vercel.app/categories/cybersecurity/</loc>
     <lastmod>2025-07-10T14:15:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://debloga.vercel.app/</loc>
     <lastmod>2025-07-10T14:15:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/infosec/</loc>
+    <loc>https://debloga.vercel.app/categories/infosec/</loc>
     <lastmod>2025-07-10T14:15:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/guloader/</loc>
+    <loc>https://debloga.vercel.app/guloader/</loc>
     <lastmod>2025-07-10T14:15:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/malware/</loc>
+    <loc>https://debloga.vercel.app/categories/malware/</loc>
     <lastmod>2025-07-10T14:15:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/nirjhar-barma/</loc>
+    <loc>https://debloga.vercel.app/authors/nirjhar-barma/</loc>
     <lastmod>2025-07-10T14:15:00+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/learnc/</loc>
+    <loc>https://debloga.vercel.app/learnc/</loc>
     <lastmod>2024-02-21T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/development/</loc>
+    <loc>https://debloga.vercel.app/categories/development/</loc>
     <lastmod>2024-02-21T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/general/</loc>
+    <loc>https://debloga.vercel.app/categories/general/</loc>
     <lastmod>2024-02-21T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
+    <loc>https://debloga.vercel.app/categories/programming/</loc>
     <lastmod>2024-02-21T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/rishi-paul/</loc>
+    <loc>https://debloga.vercel.app/authors/rishi-paul/</loc>
     <lastmod>2024-02-21T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/digtital-forensics/</loc>
+    <loc>https://debloga.vercel.app/categories/digtital-forensics/</loc>
     <lastmod>2024-02-05T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/malware-evasion/</loc>
+    <loc>https://debloga.vercel.app/categories/malware-evasion/</loc>
     <lastmod>2024-02-05T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/picture/</loc>
+    <loc>https://debloga.vercel.app/picture/</loc>
     <lastmod>2024-02-05T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/hacking/</loc>
+    <loc>https://debloga.vercel.app/categories/hacking/</loc>
     <lastmod>2023-12-06T15:20:24+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/kanouj-bose/</loc>
+    <loc>https://debloga.vercel.app/authors/kanouj-bose/</loc>
     <lastmod>2023-12-06T15:20:24+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/osint/</loc>
+    <loc>https://debloga.vercel.app/categories/osint/</loc>
     <lastmod>2023-12-06T15:20:24+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/authors/pritam-das/</loc>
+    <loc>https://debloga.vercel.app/authors/pritam-das/</loc>
     <lastmod>2023-12-06T15:20:24+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rfid/</loc>
+    <loc>https://debloga.vercel.app/rfid/</loc>
     <lastmod>2023-12-06T15:20:24+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/my-first-post/</loc>
+    <loc>https://debloga.vercel.app/my-first-post/</loc>
     <lastmod>2023-12-05T16:55:24+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/tech/</loc>
+    <loc>https://debloga.vercel.app/categories/tech/</loc>
     <lastmod>2023-12-05T16:55:24+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/dark-web/</loc>
+    <loc>https://debloga.vercel.app/categories/dark-web/</loc>
     <lastmod>2023-12-05T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/nirjhar/</loc>
+    <loc>https://debloga.vercel.app/nirjhar/</loc>
     <lastmod>2023-12-05T12:23:59+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://debloga.vercel.app/about/</loc>
     <lastmod>2023-12-05T00:00:00+00:00</lastmod>
   </url>
 </urlset>
