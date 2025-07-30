@@ -237,6 +237,6 @@ This incident is a stark reminder that security is not just about technology —
 
 ## [LINKS]
 
-- **Any.Run link**: ![Any.run/Task](https://app.any.run/tasks/c653a81e-4e54-4e2a-973f-e32e39b9d4fa)  
-- **Report link**: ![Any.run/report](https://any.run/report/4668dc8468e677499828c63e313945125134803D6C96FE431BB71C332A64BE49/c653a81e-4e54-4e2a-973f-e32e39b9d4fa#i-table-processes-2ca8267e-9675-43b8-b0c9-196debf87044)  
-- **Malware link**: ![Cybersharing.net](https://cybersharing.net/s/629605c93acb4598) *(Use isolated virtual machine to run)*
+- **Any.Run link**: [Any.run/Task](https://app.any.run/tasks/c653a81e-4e54-4e2a-973f-e32e39b9d4fa)  
+- **Report link**: [Any.run/report](https://any.run/report/4668dc8468e677499828c63e313945125134803D6C96FE431BB71C332A64BE49/c653a81e-4e54-4e2a-973f-e32e39b9d4fa#i-table-processes-2ca8267e-9675-43b8-b0c9-196debf87044)  
+- **Malware link**: [Cybersharing.net](https://cybersharing.net/s/629605c93acb4598) *(Use isolated virtual machine to run)*
